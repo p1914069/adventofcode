@@ -1,4 +1,3 @@
-
 if __name__ == '__main__':
     f = open("input_2.txt", "r")
 
@@ -8,6 +7,9 @@ if __name__ == '__main__':
     # Technique 2
     data = f.read().split('\n')
     instruction = []
+    # instruction: [tabline1, tabline2, tabline3,...]
+    # tabline: ['forward', 2]
+    # → instruction: [['forward', 2], ['down', 6],...]
 
     for l in data:
         line = l.split(" ")
@@ -16,7 +18,6 @@ if __name__ == '__main__':
 
     profondeur = 0
     avance = 0
-
     visee = 0
 
     # Partie 1

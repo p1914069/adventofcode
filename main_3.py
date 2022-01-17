@@ -9,10 +9,17 @@ if __name__ == '__main__':
     petite_liste_compteurs = []
 
     gamma = []
-    epsilon = []
+    gamma_int = 0
 
-    for i in range(1, 12):
-        liste_compteurs.append(petite_liste_compteurs)
+    epsilon = []
+    epsilon_int = 0
+
+    compteur_g = 0
+    compteur_e = 0
+
+    liste_oxygene = []
+    liste_co2 = []
+
 
     for i in data:
         petite_liste = list(i)
@@ -21,44 +28,12 @@ if __name__ == '__main__':
     nb0_col = 0
     nb1_col = 0
 
-    # for j in liste:
-    #     # Colonne 1
-    #     if int(j[0]) == 0:
-    #         nb0_col1 = nb0_col1 + 1
-    #     else:
-    #         nb1_col1 = nb1_col1 + 1
-    #     # Colonne 2
-    #     if int(j[1]) == 0:
-    #         nb0_col1 = nb0_col1 + 1
-    #     else:
-    #         nb1_col1 = nb1_col1 + 1
-    #     # Colonne 3
-    #     if int(j[2]) == 0:
-    #         nb0_col1 = nb0_col1 + 1
-    #     else:
-    #         nb1_col1 = nb1_col1 + 1
-    #     # Colonne 4
-    #     if int(j[3]) == 0:
-    #         nb0_col1 = nb0_col1 + 1
-    #     else:
-    #         nb1_col1 = nb1_col1 + 1
-    #     # Colonne 5
-    #     if int(j[4]) == 0:
-    #         nb0_col1 = nb0_col1 + 1
-    #     else:
-    #         nb1_col1 = nb1_col1 + 1
-    #     # Colonne 6
-    #     if int(j[5]) == 0:
-    #         nb0_col1 = nb0_col1 + 1
-    #     else:
-    #         nb1_col1 = nb1_col1 + 1
-
     for i in range(0, 12):
         nb0_col = 0
         nb1_col = 0
 
         for j in liste:
-            # Colonne 1
+
             if int(j[i]) == 0:
                 nb0_col = nb0_col + 1
             else:
@@ -75,8 +50,20 @@ if __name__ == '__main__':
         print(f'Nombre de 1 colonne {i}: {nb1_col}')
 
     print(f'\n → Gamma: {gamma}')
-    print(f'\n → Epsilon: {epsilon}')
+    print(f'\n → Epsilon: {epsilon}\n')
 
-    # convertisseur gamma → nombre
-    for i in gamma:
-        pass
+    # gamma = 3903
+    # epsilon = 384
+
+    print('Résultat 1ère partie = 749 376')
+
+    # 2eme partie
+
+    liste_oxygene = liste
+    print(liste_oxygene)
+
+    nb_lignes = len(liste_oxygene)
+
+    print(liste_oxygene)
+
+
